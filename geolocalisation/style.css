@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fad390;
+}
+
+nav {
+    background-color: #b71540;
+    display: flex;
+    padding: 25px;
+}
+
+nav .box {
+    background-color: #fBc291;
+    width: 30%;
+    height: 100px;
+    padding: 25px;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .box div {
+    background-color: #ffa042;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+nav .box:hover div {
+    background: none;
+    transition: 0.4s;
+}
+
+nav .box:hover div i {
+    font-size: 50px;
+    transition: 0.4s;
+}
+
+nav .box span {
+    margin-top: 10px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+nav .box:hover span {
+    opacity: 1;
+    transition: 0.2s;
+}
+
+
+section h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+section h1 span {
+    display: block;
+    font-size: 20px;
+    letter-spacing: 4px;
+}
+
+section iframe {
+    width: 100%;
+    height: 450px;
+}
+
+@media screen and (max-width:800px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav .box {
+        width: 75%;
+        margin: 10px 0;
+    }
+}
